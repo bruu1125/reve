@@ -270,8 +270,8 @@ font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, '
     position: absolute;
     top:4vh;
     left:0;
-    /* transform: translateY(-100%); */
-    /* opacity: 0; */
+    transform: translateY(-100%);
+    opacity: 0;
     z-index: -1;
     background-color: var(--light-gray);
     transition: 0.5s;
