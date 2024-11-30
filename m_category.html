@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=1.0, 
+                user-scalable=no, 
+                viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="resources/styles/normalize.css">
+    <link rel="stylesheet" href="resources/styles/reponsive.css">
+    <link rel="stylesheet" href="resources/styles/m_categorybox.css">
+
+
+    <!-- web-font [pretendard] -->
+    <link rel="stylesheet" type="text/css"
+        href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+
+
+
+    <title>프리미엄 브랜드 셀렉샵 Reve</title>
+</head>
+
+<body class="body">
+    <div class="container">
+
+        <div class="m-categorybox__wrap display-flex">
+            <div class="m-category__head display-flex">
+                <button class="goback-btn" onclick="history.back()">
+                    <img src="resources/images/icons/arrow-prev.svg" alt="">
+                </button>
+            </div>
+
+            <nav class="m-category__content m-categorybox__gnb" id="gnbMobile">
+                <ul class="m-gnb__depth01 display-flex">
+                    <li>
+                        <a href="#">
+                            NEW
+                            <img src="resources/images/icons/arrow-right_sm.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            BRAND
+                            <img src="resources/images/icons/arrow-down_sm.svg" alt="">
+                        </a>
+                        <ul class="m-gnb__depth02">
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">CHANEL</a></li>
+                            <li><a href="#">LOUIS VUITTON</a></li>
+                            <li><a href="#">PRADA</a></li>
+                            <li><a href="#">HERMES</a></li>
+                            <li><a href="#">CELINE</a></li>
+                            <li><a href="#">GUCCI</a></li>
+                            <li><a href="#">BALENCIAGA</a></li>
+                            <li><a href="#">MONCLER</a></li>
+                            <li><a href="#">STONE ISLAND</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="product_woman.html">
+                            WOMAN
+                            <img src="resources/images/icons/arrow-down_sm.svg" alt="">
+                        </a>
+                        <ul class="m-gnb__depth02">
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">OUTER</a></li>
+                            <li><a href="#">TOP</a></li>
+                            <li><a href="#">PANTS</a></li>
+                            <li><a href="#">KNIT</a></li>
+                            <li><a href="#">SKIRT</a></li>
+                            <li><a href="#">ONE PIECE</a></li>
+                            <li><a href="#">BAG</a></li>
+                            <li><a href="#">ACC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="product_man.html">
+                            MAN
+                            <img src="resources/images/icons/arrow-down_sm.svg" alt="">
+                        </a>
+                        <ul class="m-gnb__depth02">
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">OUTER</a></li>
+                            <li><a href="#">TOP</a></li>
+                            <li><a href="#">PANTS</a></li>
+                            <li><a href="#">KNIT</a></li>
+                            <li><a href="#">BAG</a></li>
+                            <li><a href="#">ACC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            EVENT
+                            <img src="resources/images/icons/arrow-right_sm.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            REVIEW
+                            <img src="resources/images/icons/arrow-right_sm.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="m-category__content m-categorybox__search" id="searchboxMobile">
+                <form action="" class="m-search__form">
+                    <div class="m-searchbox__inputarea display-flex">
+                        <input type="text" name="search-box" id="searchBox">
+                        <button class="btn-input__clear"></button>
+                        <button class="btn-search__submit"></button>
+                    </div>
+                    <div class="search-history">
+                        <p class="search-history__title">최근 검색어</p>
+                        <ul class="search-history__boxlist display-flex" id="searchHistory-BoxList">
+                            <li id="searchHistory-Box">
+                                <a href="#">Hello</a>
+                                <button class="btn-remove__searchhistory"></button>
+                            </li>
+                            <li id="searchHistory-Box">
+                                <a href="#">Apple</a>
+                                <button class="btn-remove__searchhistory"></button>
+                            </li>
+                            <li id="searchHistory-Box">
+                                <a href="#">Banana</a>
+                                <button class="btn-remove__searchhistory"></button>
+                            </li>
+                            <li id="searchHistory-Box">
+                                <a href="#">BananaBanana</a>
+                                <button class="btn-remove__searchhistory"></button>
+                            </li>
+                            <li id="searchHistory-Box">
+                                <a href="#">Banana</a>
+                                <button class="btn-remove__searchhistory"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-searched">
+                        <p class="top-searched__title">인기 검색어</p>
+                        <ol class="top-searched__boxlist" id="topSearched-BoxList">
+                            <li id="topSearchedBox"><a href="#"><span>1</span>신재준</a></li>
+                            <li id="topSearchedBox"><a href="#"><span>2</span>신재준</a></li>
+                            <li id="topSearchedBox"><a href="#"><span>3</span>신재준</a></li>
+                            <li id="topSearchedBox"><a href="#"><span>4</span>신재준</a></li>
+                            <li id="topSearchedBox"><a href="#"><span>5</span>신재준</a></li>
+                        </ol>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="navbar-only__mobile">
+            <ul class="display-flex">
+                <li id="mo-navBtnCategory">
+                    <a href="m_category.html" class="menu-button">
+                        <img src="resources/images/icons/category.svg" alt="">
+                        <p>카테고리</p>
+                    </a>
+                </li>
+                <li id="mo-navBtnSearch">
+                    <a href="#">
+                        <img src="resources/images/icons/search02.svg" alt="">
+                        <p>검색</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="resources/images/icons/home.svg" alt="">
+                        <p>홈</p>
+                    </a>
+                </li>
+                <li id="mo-navBtnMypage">
+                    <a href="#">
+                        <img src="resources/images/icons/usericon02.svg" alt="">
+                        <p>마이페이지</p>
+                    </a>
+                </li>
+                <li id="mo-navBtnCart">
+                    <a href="#">
+                        <img src="resources/images/icons/cart02.svg" alt="">
+                        <p>장바구니</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".m-categorybox__gnb, .m-categorybox__search").hide();
+
+            const hash = location.hash;
+            if (hash === "#gnbMobile") {
+                $(".m-categorybox__gnb").show();
+            } else if (hash === "#searchboxMobile") {
+                $(".m-categorybox__search").show();
+            }
+
+            $("#mo-navBtnCategory a").click(function (e) {
+                e.preventDefault();
+                $(".m-categorybox__search").hide();
+                $(".m-categorybox__gnb").show();
+            });
+
+            $("#mo-navBtnSearch a").click(function (e) {
+                e.preventDefault();
+                $(".m-categorybox__gnb").hide();
+                $(".m-categorybox__search").show();
+            });
+
+            // 카테고리 2-depth 슬라이드 메뉴 토글 (2depth 있는 카테고리만 동작하게함)
+            $(".m-gnb__depth02").hide();
+            $(".m-gnb__depth01 > li > a").click(function (e) {
+                const subMenu = $(this).siblings(".m-gnb__depth02");
+                if (subMenu.length > 0) {
+                    e.preventDefault();
+                    $(".m-gnb__depth02").not(subMenu).slideUp(500);
+                    subMenu.stop().slideToggle(500);
+                    $(this).find("img").toggleClass("rotate");
+                }
+            });
+
+            // 검색창 텍스트 클리어 버튼 
+            //(텍스트 입력하면 생김 근데 사이즈가....뷰포트마다 달라서..여러 기기로 체크해봐야할듯)
+            const inputField = $(".m-searchbox__inputarea input[type='text']");
+            const clearButton = $(".btn-input__clear");
+            clearButton.hide();
+
+            inputField.on("keyup", function () {
+                if ($(this).val().trim() !== "") {
+                    clearButton.show();
+                } else {
+                    clearButton.hide();
+                }
+            });
+
+            clearButton.on("click", function (e) {
+                e.preventDefault();
+                inputField.val("");
+                clearButton.hide();
+            });
+
+            // 검색 기록 상태 확인해서 검색안했으면 메세지
+            function checkSearchHistory() {
+                const historyList = $("#searchHistory-BoxList");
+                const listItems = historyList.children("li:not(.empty-message)"); // 현재 검색어 li
+                if (listItems.length === 0) {
+                    if (!historyList.find(".empty-message").length) {
+                        historyList.append('<li class="empty-message">최근 검색어가 없습니다.</li>');
+                    }
+                } else {
+                    historyList.find(".empty-message").remove();
+                }
+            }
+
+            // 최근 검색어 최대 6개만
+            function enforceMaxSearchHistory() {
+                const historyList = $("#searchHistory-BoxList");
+                const listItems = historyList.children("li:not(.empty-message)");
+                if (listItems.length > 6) {
+                    listItems.slice(6).remove();
+                }
+            }
+
+            // 최근 검색어 삭제
+            $("#searchHistory-BoxList").on("click", ".btn-remove__searchhistory", function (e) {
+                e.preventDefault();
+                $(this).closest("li").remove();
+                checkSearchHistory();
+            });
+
+            // 검색 버튼 클릭 시 검색어 추가하는것임 (ajax 사용해서 검색기능 가능)
+            $(".btn-search__submit").on("click", function (e) {
+                e.preventDefault();
+                const searchValue = inputField.val().trim();
+
+                if (searchValue === "") {
+                    alert("검색어를 입력해주세요.");
+                    return;
+                }
+
+                const historyList = $("#searchHistory-BoxList");
+                const newItem = `
+            <li id="searchHistory-Box">
+                <a href="#">${searchValue}</a>
+                <button class="btn-remove__searchhistory"></button>
+            </li>`;
+
+                historyList.prepend(newItem);
+                inputField.val("");
+                clearButton.hide();
+
+                checkSearchHistory();
+                enforceMaxSearchHistory();
+            });
+
+            checkSearchHistory();
+            enforceMaxSearchHistory();
+        });
+
+
+    </script>
+</body>
+
+</html>

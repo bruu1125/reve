@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=1.0, 
+                user-scalable=no, 
+                viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="resources/styles/normalize.css">
+    <link rel="stylesheet" href="resources/styles/main.css">
+    <link rel="stylesheet" href="resources/styles/reponsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+
+    <!-- web-font [pretendard] -->
+    <link rel="stylesheet" type="text/css"
+        href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+
+
+
+    <title>프리미엄 브랜드 셀렉샵 Reve</title>
+</head>
+
+<body class="body" id="body">
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <div class="header-topbanner">
+                <a href="#">신규 회원가입 시 50,000원 웰컴쿠폰 즉시 발급</a>
+            </div>
+            <div class="header-wrap display-flex">
+                <div class="header-contents display-flex">
+                    <h1 class="logo"><a href="index.html"><img src="resources/images/logo.svg" alt="REVE로고"></a></h1>
+                    <nav class="gnb">
+                        <ul class="display-flex">
+                            <li><a href="product_new.html">NEW</a></li>
+                            <li><a href="brand.html">BRAND</a></li>
+                            <li><a href="product_woman.html">WOMAN</a></li>
+                            <li><a href="product_man.html">MAN</a></li>
+                            <li><a href="javascript:void(0);" onclick="alert('준비중입니다.')">EVENT</a></li>
+                            <li><a href="javascript:void(0);" onclick="alert('준비중입니다.')">REVIEW</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-icons display-flex">
+                        <ul class="display-flex">
+                            <li class="search-icon">
+                                <button id="searchButton">
+                                    <img src="resources/images/icons/search.svg" alt="검색 아이콘">
+                                </button>
+                            </li>
+                            <li class="userpage-icon">
+                                <a href="#">
+                                    <img src="resources/images/icons/usericon.svg" alt="유저 아이콘">
+                                </a>
+                            </li>
+                            <li class="shoppingbag-icon">
+                                <a href="#">
+                                    <img src="resources/images/icons/cart.svg" alt="카트 아이콘">
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="login-icon">
+                            <a href="#">
+                                <img src="resources/images/icons/lock.svg" alt="자물쇠 아이콘">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="header-contents__Mobile">
+                    <div class="m-header__wrap display-flex">
+                        <h1 class="logo display-flex">
+                            <a href="index.html">
+                                <img src="resources/images/logo_light.svg" alt="REVE로고" class="logo-white">
+                                <img src="resources/images/logo.svg" alt="REVE로고" class="logo-black">
+                            </a>
+                        </h1>
+                        <span class="m-login-icon">
+                            <a href="#">
+                                <img src="resources/images/icons/lock.svg" alt="" class="m-lockicon-black">
+                                <img src="resources/images/icons/lock_white.svg" alt="" class="m-lockicon-white">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="header-searchbox">
+                    <form action="" class="searchbox-wrap display-flex">
+                        <div class="searchbox-flex__left">
+                            <div class="searchbox-inputarea">
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="search-keywords__recent display-flex">
+                                <p>최근 검색어</p>
+                                <ul class="display-flex">
+                                    <li><a href="">dd</a></li>
+                                    <li><a href="">dd</a></li>
+                                    <li><a href="">dd</a></li>
+                                    <li><a href="">dd</a></li>
+                                    <li><a href="">dd</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="searchbox-flex__right search-keywords__popular">
+                            <p>인기 검색어</p>
+                            <ul>
+                                <li><a href="">dd</a></li>
+                                <li><a href="">dd</a></li>
+                                <li><a href="">dd</a></li>
+                                <li><a href="">dd</a></li>
+                                <li><a href="">dd</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <script>
+
+        </script>
+
+        <!-- main -->
+        <main class="main" role="main">
+            <div class="main-wrap">
+                <!-- 메인 비주얼 배너 -->
+                <section class="section section-width__wide section-no__margin main-banner main-banner__visual swiper">
+                    <div class="visual-banner__wrap swiper-wrapper">
+                        <div class="visual-banner__item swiper-slide">
+                            <img src="resources/images/main/banner_visual_maxmara.png" alt="">
+                            <div class="visual-item__txt display-flex">
+                                <p class="visual-txt__content">
+                                    우아함과 실용성을 겸비한 현대적인 품격
+                                    <strong class="txt-bold">막스마라</strong>
+                                </p>
+                                <a href="#" class="btn-component01">바로가기 <span></span></a>
+                            </div>
+                        </div>
+                        <div class="visual-banner__item swiper-slide">
+                            <img src="resources/images/main/banner_visual_moncler.png" alt="">
+                            <div class="visual-item__txt display-flex">
+                                <p class="visual-txt__content">
+                                    프리미엄 아우터웨어의 정수
+                                    <strong class="txt-bold">몽클레르</strong>
+                                </p>
+                                <a href="#" class="btn-component01">바로가기 <span></span></a>
+                            </div>
+                        </div>
+                        <div class="visual-banner__item swiper-slide">
+                            <img src="resources/images/main/banner_visual_prada.png" alt="">
+                            <div class="visual-item__txt display-flex">
+                                <p class="visual-txt__content">
+                                    고급스러움 속에서 빛나는 모던함
+                                    <strong class="txt-bold">프라다</strong>
+                                </p>
+                                <a href="#" class="btn-component01">바로가기 <span></span></a>
+                            </div>
+                        </div>
+                        <div class="visual-banner__item swiper-slide">
+                            <img src="resources/images/main/banner_visual_westwood.png" alt="">
+                            <div class="visual-item__txt display-flex">
+                                <p class="visual-txt__content">
+                                    예술과 자유로 빚어낸 대담한 클래식
+                                    <strong class="txt-bold">비비안 웨스트우드</strong>
+                                </p>
+                                <a href="#" class="btn-component01">바로가기 <span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev prev-no-bg"></div>
+                    <div class="swiper-button-next next-no-bg"></div>
+                </section>
+
+                <!-- 메인 카테고리 박스 -->
+                <section class="section section-width__limit main-category">
+                    <div class="main-category__wrap display-flex" data-aos="fade-up" data-aos-offset="100"
+                        data-aos-easing="ease-out-sine" data-aos-duration="800">
+                        <a class="category-item category-woman" href="#">
+                            <img src="resources/images/main/main_category/main_category_woman.png" alt="">
+                            <span class="categoryitem_title">WOMAN</span>
+                            <span class="category-go">WOMAN 바로가기</span>
+
+                        </a>
+                        <a class="category-item category-man" href="#">
+                            <img src="resources/images/main/main_category/main_category_man.png" alt="">
+                            <span class="categoryitem_title">MAN</span>
+                            <span class="category-go">MAN 바로가기</span>
+                        </a>
+                        <a class="category-item category-bag" href="#">
+                            <img src="resources/images/main/main_category/main_category_bag.png" alt="">
+                            <span class="categoryitem_title">BAG</span>
+                            <span class="category-go">BAG 바로가기</span>
+                        </a>
+                        <a class="category-item category-acc" href="#">
+                            <img src="resources/images/main/main_category/main_category_acc.png" alt="">
+                            <span class="categoryitem_title">ACC</span>
+                            <span class="category-go">ACC 바로가기</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 메인 상품리스트 (트렌드픽) -->
+                <section class="section section-width__limit main-trendpick">
+                    <h2 class="title">Trend Pick</h2>
+                    <div class="trendpick-wrap">
+                        <div class="product-list__box">
+                            <ul class="product-list" id="productList">
+                                <!-- item -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 메인 익스클루시브 배너 -->
+                <section class="section section-width__wide main-banner main-banner__exclusive">
+                    <div class="exclusive-wrap">
+                        <a href="#">
+                            <img src="resources/images/main/banner_exclusive.png" alt="">
+                            <span class="btn-component02">2025 SS Collection</span>
+                        </a>
+                    </div>
+                    <div class="exclusive-wrap__mobile">
+                        <a href="#">
+                            <img src="resources/images/main/banner_exclusive_mobile.png" alt="">
+                        </a>
+                        <div class="exclusive-mobile-txtbox">
+                            <img src="resources/images/main/logo_balenciaga.png" alt="">
+                        </div>
+                        <span class="btn-component01">2025 SS Collection</span>
+                    </div>
+                </section>
+
+                <!-- 메인 브랜드 배너 -->
+                <section class="section section-width__wide main-banner main-banner__brands swiper">
+                    <div class="brands-banner__wrap swiper-wrapper display-flex">
+                        <div class="brands-banner__item swiper-slide">
+                            <img src="resources/images/main/exclusive_item_stoneisland.png" alt="">
+                            <div class="barnds-banner__txtbox">
+                                <img src="resources/images/main/logo_stoneisland.png" alt="">
+                                <div class="brandshop-content display-flex img-bg-light">
+                                    <div>
+                                        <span class="brandshop-content__txt">컨템포러리 어쩌고</span>
+                                        <span class="brandshop-content__title"><strong
+                                                class="txt-bold">스톤아일랜드</strong></span>
+                                    </div>
+                                    <a href="#" class="btn-component01">브랜드 스토어</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands-banner__item swiper-slide">
+                            <img src="resources/images/main/exclusive_item_celine.png" alt="">
+                            <div class="barnds-banner__txtbox">
+                                <img src="resources/images/main/logo_celine.png" alt="">
+                                <div class="brandshop-content display-flex">
+                                    <div>
+                                        <span class="brandshop-content__txt">어쩌고저쩌고</span>
+                                        <span class="brandshop-content__title"><strong
+                                                class="txt-bold">셀린느</strong></span>
+                                    </div>
+                                    <a href="#" class="btn-component01">브랜드 스토어</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands-banner__item swiper-slide">
+                            <img src="resources/images/main/exclusive_item_hermes.png" alt="">
+                            <div class="barnds-banner__txtbox">
+                                <img src="resources/images/main/logo_hermes.png" alt="">
+                                <div class="brandshop-content display-flex">
+                                    <div>
+                                        <span class="brandshop-content__txt">프랑스 하이엔드 패션하우스</span>
+                                        <span class="brandshop-content__title"><strong
+                                                class="txt-bold">에르메스</strong></span>
+                                    </div>
+                                    <a href="#" class="btn-component01">브랜드 스토어</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands-banner__item swiper-slide">
+                            <img src="resources/images/main/exclusive_item_acnestudios.png" alt="">
+                            <div class="barnds-banner__txtbox">
+                                <img src="resources/images/main/logo_acnestudios.png" alt="">
+                                <div class="brandshop-content display-flex">
+                                    <div>
+                                        <span class="brandshop-content__txt">로렘입숨</span>
+                                        <span class="brandshop-content__title"><strong class="txt-bold">아크네
+                                                스튜디오</strong></span>
+                                    </div>
+                                    <a href="#" class="btn-component01">브랜드 스토어</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands-banner__item swiper-slide">
+                            <img src="resources/images/main/exclusive_item_louisvuitton.png" alt="">
+                            <div class="barnds-banner__txtbox">
+                                <img src="resources/images/main/logo_louisvuitton.png" alt="">
+                                <div class="brandshop-content display-flex">
+                                    <div>
+                                        <span class="brandshop-content__txt">예뻐요</span>
+                                        <span class="brandshop-content__title"><strong
+                                                class="txt-bold">루이비통</strong></span>
+                                    </div>
+                                    <a href="#" class="btn-component01">브랜드 스토어</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev-no-bg"></div>
+                    <div class="swiper-button-next next-no-bg"></div>
+                </section>
+
+                <!-- 메인 이벤트 배너 -->
+                <section class="section section-width__wide main-banner main-banner__event">
+                    <div class="event-banner__wrap display-flex">
+                        <a href="#">
+                            <img src="resources/images/main/banner_review.png" alt="">
+                            <div class="main-event__innertxt txt-white">
+                                <strong class="txt-bold">BEST REVIEW EVENT</strong>
+                                <p>베스트 리뷰로 선정되면 최대 100,000원 적립금 지급!</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img src="resources/images/main/banner_welcome.png" alt="">
+                            <div class="main-event__innertxt welcome-event">
+                                <p>신규 회원가입 시 <br><strong class="txt-bold">50,000원 웰컴쿠폰</strong> 즉시 발급!</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 메인 베스트리뷰 스와이퍼 -->
+                <section class="section section-width__limit main-bestreview">
+                    <h2 class="title">Best Review</h2>
+                    <div class="main-bestreview__wrap swiper">
+                        <ul class="bestreview-list swiper-wrapper">
+                            <li class="bestreview-item swiper-slide">
+                                <div class="user-review__img">
+                                    <img src="resources/images/main/review_user_img01.png" alt="">
+                                </div>
+
+                                <div class="user-review__content display-flex">
+                                    <div class="review-content__txtbox">
+                                        <span class="user-id">rina</span>
+                                        <p class="user-review__subtxt">코트 좋아요~</p>
+                                    </div>
+                                    <ul class="star display-flex">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+
+                                <a class="review-product__info display-flex" href="#">
+                                    <div class="product-thumbnali__sm">
+                                        <img src="resources/images/main/review_thum_sm01.png" alt="">
+                                    </div>
+                                    <div class="review-product__link display-flex">
+                                        <div class="product-info review-product__txt">
+                                            <span class="item-brand">MAXMARA</span>
+                                            <span class="item-title">더블 브레스트 코트 카멜</span>
+                                        </div>
+                                        <span class="go-link"><img src="resources/images/icons/arrow-next.svg"
+                                                alt=""></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="bestreview-item swiper-slide">
+                                <div class="user-review__img">
+                                    <img src="resources/images/main/review_user_img02.png" alt="">
+                                </div>
+                                <div class="user-review__content display-flex">
+                                    <div class="review-content__txtbox">
+                                        <span class="user-id">rina</span>
+                                        <p class="user-review__subtxt">코트 좋아요~</p>
+                                    </div>
+                                    <ul class="star display-flex">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <a class="review-product__info display-flex" href="#">
+                                    <div class="product-thumbnali__sm">
+                                        <img src="resources/images/main/review_thum_sm02.png" alt="">
+                                    </div>
+                                    <div class="review-product__link display-flex">
+                                        <div class="product-info review-product__txt">
+                                            <span class="item-brand">BALENCIAGA</span>
+                                            <span class="item-title">모나코 미니 퀼티드 백 블랙</span>
+                                        </div>
+                                        <span class="go-link"><img src="resources/images/icons/arrow-next.svg"
+                                                alt=""></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="bestreview-item swiper-slide">
+                                <div class="user-review__img">
+                                    <img src="resources/images/main/review_user_img03.png" alt="">
+                                </div>
+                                <div class="user-review__content display-flex">
+                                    <div class="review-content__txtbox">
+                                        <span class="user-id">rina</span>
+                                        <p class="user-review__subtxt">코트 좋아요~</p>
+                                    </div>
+                                    <ul class="star display-flex">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <a class="review-product__info display-flex" href="#">
+                                    <div class="product-thumbnali__sm">
+                                        <img src="resources/images/main/review_thum_sm03.png" alt="">
+                                    </div>
+                                    <div class="review-product__link display-flex">
+                                        <div class="product-info review-product__txt">
+                                            <span class="item-brand">GUCCI</span>
+                                            <span class="item-title">사이드 자카드 로고 트랙팬츠</span>
+                                        </div>
+                                        <span class="go-link"><img src="resources/images/icons/arrow-next.svg"
+                                                alt=""></span>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="bestreview-item swiper-slide">
+                                <div class="user-review__img">
+                                    <img src="resources/images/main/review_user_img04.png" alt="">
+                                </div>
+                                <div class="user-review__content display-flex">
+                                    <div class="review-content__txtbox">
+                                        <span class="user-id">rina</span>
+                                        <p class="user-review__subtxt">코트 좋아요~</p>
+                                    </div>
+                                    <ul class="star display-flex">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <a class="review-product__info display-flex" href="#">
+                                    <div class="product-thumbnali__sm">
+                                        <img src="resources/images/main/review_thum_sm04.png" alt="">
+                                    </div>
+                                    <div class="review-product__link display-flex">
+                                        <div class="product-info review-product__txt">
+                                            <span class="item-brand">THOM BROWNE</span>
+                                            <span class="item-title">사선완장 클래식 메리노 울 가디건</span>
+                                        </div>
+                                        <span class="go-link"><img src="resources/images/icons/arrow-next.svg"
+                                                alt=""></span>
+                                    </div>
+
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- /main -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-contents display-flex">
+                    <div class="footer-company">
+                        <ul class="footer-contents__list display-flex">
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">제휴상담</a>
+                            </li>
+                        </ul>
+                        <div class="company-infowrap display-flex">
+                            <p>(주)레브</p>
+                            <ul class="company-info__list">
+                                <li><strong class="txt-bold">대표자명</strong> 박서현</li>
+                                <li><strong class="txt-bold">사업자등록번호</strong> 201-86-12345 <a href="#"
+                                        style="display: inline-block;">[사업자정보확인]</a></li>
+                                <li><strong class="txt-bold">통신판매업신고번호</strong> 205-경기고양-1234</li>
+                                <li><strong class="txt-bold">주소</strong> (12345) 경기도 고양시 일산서구</li>
+                                <li><strong class="txt-bold">개인정보보호책임자</strong> 박서현</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="logo" href="index.html">
+                        <img src="resources/images/logo_light.svg" alt="로고">
+                    </a>
+                    <div class="footer-service display-flex">
+                        <p class="csnumber">고객센터 <a href="tel:01047829909" style="display: inline-block;">1588-1125</a>
+                        </p>
+                        <p><strong class="txt-bold">운영시간</strong> 10:00 ~ 17:00 (토,일요일 / 공휴일 휴무)</p>
+                        <p><strong class="txt-bold">E-mail</strong> <a href="mailto:bruu1125@gmail.com"
+                                style="display: inline-block;">bruu1125@gmail.com</a></p>
+                        <div class="footer-snsicons">
+                            <ul class="snsicons-list display-flex">
+                                <li><a href="#">
+                                        <img src="resources/images/icons/sns_instagram.svg" alt="인스타그램">
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="resources/images/icons/sns_x.svg" alt="엑스">
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <img src="resources/images/icons/sns_youtube.svg" alt="유튜브">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-copyright">
+                    COPYRIGHT © REVE ALL RIGHT RESERVED.
+                </p>
+            </div>
+
+            <div class="footer-wrap__mobile">
+                <a class="logo" href="index.html">
+                    <img src="resources/images/logo_light.svg" alt="로고">
+                </a>
+                <div class="m-footer__contents">
+                    <div class="m-footer-infolist">
+                        <button class="m-footer__contenttitle display-flex">
+                            Company Info
+                            <span><img src="resources/images/icons/arrow-down.svg" alt=""></span>
+                        </button>
+                        <div class="m-footer__contentinner">
+                            <ul class="company-info__list">
+                                <li><strong class="txt-bold">대표자명</strong> 박서현</li>
+                                <li><strong class="txt-bold">사업자등록번호</strong> 201-86-12345 <a href="#"
+                                        style="display: inline-block;">[사업자정보확인]</a></li>
+                                <li><strong class="txt-bold">통신판매업신고번호</strong> 205-경기고양-1234</li>
+                                <li><strong class="txt-bold">주소</strong> (12345) 경기도 고양시 일산서구</li>
+                                <li><strong class="txt-bold">개인정보보호책임자</strong> 박서현</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="m-footer-infolist">
+                        <button class="m-footer__contenttitle display-flex">
+                            Community
+                            <span><img src="resources/images/icons/arrow-down.svg" alt=""></span>
+                        </button>
+                        <div class="m-footer__contentinner">
+                            <ul class="company-info__list">
+                                <li><a href="#"><strong class="txt-bold">공지사항</strong></a></li>
+                                <li><a href="#"><strong class="txt-bold">QNA</strong></a></li>
+                                <li><strong class="txt-bold">고객센터</strong> <a href="tel:01047829909"
+                                        style="display: inline-block;">1588-1125</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="m-footer-infolist">
+                        <button class="m-footer__contenttitle display-flex">
+                            Terms of service
+                            <span><img src="resources/images/icons/arrow-down.svg" alt=""></span>
+                        </button>
+                        <div class="m-footer__contentinner">
+                            <ul class="company-info__list">
+                                <li><a href="#"><strong class="txt-bold">이용약관</strong></a></li>
+                                <li><a href="#"><strong class="txt-bold">개인정보 처리방침</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="m-footer-infolist">
+                        <button class="m-footer__contenttitle display-flex">
+                            Social Media
+                            <span><img src="resources/images/icons/arrow-down.svg" alt=""></span>
+                        </button>
+                        <div class="m-footer__contentinner">
+                            <ul class="company-info__list">
+                                <li><a href="#"><strong class="txt-bold">Instagram</strong></a></li>
+                                <li><a href="#"><strong class="txt-bold">X (Twitter)</strong></a></li>
+                                <li><a href="#"><strong class="txt-bold">Youtube</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-copyright">
+                    COPYRIGHT © REVE ALL RIGHT RESERVED.
+                </p>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <div class="navbar-only__mobile">
+            <ul class="display-flex">
+                <li>
+                    <a href="m_category.html#gnbMobile" class="menu-button">
+                        <img src="resources/images/icons/category.svg" alt="">
+                        <p>카테고리</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="m_category.html#searchboxMobile">
+                        <img src="resources/images/icons/search02.svg" alt="">
+                        <p>검색</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="resources/images/icons/home.svg" alt="">
+                        <p>홈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/images/icons/usericon02.svg" alt="">
+                        <p>마이페이지</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/images/icons/cart02.svg" alt="">
+                        <p>장바구니</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <button class="topbutton"><img src="resources/images/icons/totop.svg" alt=""></button>
+
+    </div>
+
+    <script src="resources/js/common.js"></script>
+    <script src="resources/js/product.js"></script>
+    <script src="resources/js/swipers.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

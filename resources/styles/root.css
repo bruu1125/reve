@@ -1,0 +1,31 @@
+:root {
+  --light-gray: #F5F5F5;
+  --gray: #E0E0E0;
+  --dark-gray: #222222;
+  --white: #FFFFFF;
+  --white50: #FFFFFF50;
+  --white80: #FFFFFF80;
+  --black: #0A0A0A;
+  --black20: #0A0A0A20;
+  --black50: #0A0A0A50;
+  --black80: #0A0A0A80;
+  --black90: #0A0A0A90;
+  --id-color: #A48374;
+  --txt-color-light: #555555;
+  --txt-color-gray: #777777;
+
+  --font-size-big: 2.6rem;
+  --font-size-xxxl: 2.4rem;
+  --font-size-xxl: 2.2rem;
+  --font-size-xl: 2rem;
+  --font-size-lg: 1.8rem;
+  --font-size-md: 1.6rem;
+  --font-size-sm: 1.4rem;
+  --font-size-xs: 1.2rem;
+
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-light: 200;
+  --font-weight-thin: 100;
+}
