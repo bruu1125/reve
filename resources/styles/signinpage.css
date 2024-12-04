@@ -13,6 +13,7 @@
 }
 
 .signinbox {
+    width:100%;
     flex: 1.5;
     background-color: var(--white);
     /* border: 1px solid var(--black50); */
@@ -110,7 +111,7 @@
 
 .signin-userinfo {
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.4rem;
 }
 .signin-userinfo > .display-flex {
     align-items: center;
@@ -125,11 +126,12 @@
     }
 
     > input {
+        width: 100%;
         flex: 1;
         padding: 1.4rem;
         font-size: var(--font-size-sm);
         border: none;
-        border-bottom: 1px solid var(--black50);
+        border-bottom: 1px solid var(--black20);
         outline: none;
     }
     > input::placeholder {
