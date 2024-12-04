@@ -37,41 +37,41 @@
         <!-- header -->
         <header class="header">
             <div class="header-topbanner">
-                <a href="#">신규 회원가입 시 50,000원 웰컴쿠폰 즉시 발급</a>
+                <a href="signin.html#signupPage">신규 회원가입 시 50,000원 웰컴쿠폰 즉시 발급</a>
             </div>
             <div class="header-wrap display-flex">
                 <div class="header-contents display-flex">
                     <h1 class="logo"><a href="index.html"><img src="resources/images/logo.svg" alt="REVE로고"></a></h1>
                     <nav class="gnb">
                         <ul class="display-flex">
-                            <li><a href="product_new.html">NEW</a></li>
-                            <li><a href="brand.html">BRAND</a></li>
+                            <li><a href="javascript:void(0);" onclick="alert('준비중입니다.')">NEW</a></li>
+                            <li><a href="javascript:void(0);" onclick="alert('준비중입니다.')">BRAND</a></li>
                             <li><a href="product_woman.html">WOMAN</a></li>
                             <li><a href="product_man.html">MAN</a></li>
-                            <li><a href="event.html">EVENT</a></li>
-                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="javascript:void(0);" onclick="alert('준비중입니다.')">EVENT</a></li>
+                            <li><a href="javascript:void(0);" onclick="alert('준비중입니다.')">REVIEW</a></li>
                         </ul>
                     </nav>
                     <div class="header-icons display-flex">
                         <ul class="display-flex">
                             <li class="search-icon">
-                                <button>
+                                <button id="searchButton">
                                     <img src="resources/images/icons/search.svg" alt="검색 아이콘">
                                 </button>
                             </li>
                             <li class="userpage-icon">
-                                <a href="#">
+                                <a href="javascript:void(0);" onclick="handleLoginRedirect()">
                                     <img src="resources/images/icons/usericon.svg" alt="유저 아이콘">
                                 </a>
                             </li>
                             <li class="shoppingbag-icon">
-                                <a href="#">
+                                <a href="javascript:void(0);" onclick="alert('준비중입니다.')">
                                     <img src="resources/images/icons/cart.svg" alt="카트 아이콘">
                                 </a>
                             </li>
                         </ul>
                         <span class="login-icon">
-                            <a href="#">
+                            <a href="signin.html">
                                 <img src="resources/images/icons/lock.svg" alt="자물쇠 아이콘">
                             </a>
                         </span>
@@ -86,14 +86,55 @@
                             </a>
                         </h1>
                         <span class="m-login-icon">
-                            <a href="#">
+                            <a href="signin.html">
                                 <img src="resources/images/icons/lock.svg" alt="" class="m-lockicon-black">
                                 <img src="resources/images/icons/lock_white.svg" alt="" class="m-lockicon-white">
                             </a>
                         </span>
                     </div>
                 </div>
+                <div class="header-searchbox">
+                    <form action="" class="searchbox-wrap display-flex">
+                        <div class="searchbox-flex__left display-flex">
+                            <div class="searchbox-inputarea display-flex">
+                                <input type="text" name="searchbox" id="searchInputBox" placeholder="검색어를 입력하세요.">
+                                <button class="btn-input__clear"></button>
+                                <button class="searchbox-btn__submit"></button>
+                            </div>
+                        </div>
+                        <div class="searchbox-flex__middle">
+                            <div class="search-keywords__recent display-flex">
+                                <p class="search-recent__title">최근 검색어</p>
+                                <ul class="search-recent__boxlist display-flex" id="searchRecent-BoxList">
+                                    <!-- <li>
+                                                <a href="#">Hello</a>
+                                                <button class="btn-remove__searchrecent"></button>
+                                            </li> -->
+                                </ul>
+                                <button class="delete-all">전체삭제</button>
+                            </div>
+                        </div>
+
+                        <div class="searchbox-flex__right search-keywords__popular">
+                            <p class="search-popular__title">인기 검색어</p>
+                            <ol class="search-popular__boxList display-flex" id="searchPopularBoxList">
+                                <li><a href="#"><span>1</span>스톤아일랜드 패딩</a></li>
+                                <li><a href="#"><span>2</span>샤넬 크루즈</a></li>
+                                <li><a href="#"><span>3</span>프라다 메신저백</a></li>
+                                <li><a href="#"><span>4</span>루이비통 포쉐트</a></li>
+                                <li><a href="#"><span>5</span>발렌시아가</a></li>
+                            </ol>
+                        </div>
+                    </form>
+                </div>
             </div>
+
+            <script>
+                function handleLoginRedirect() {
+                    alert('로그인 후 이용 가능합니다.');
+                    window.location.href = 'signin.html'; // signin.html로 이동
+                }
+            </script>
         </header>
         <!-- /header -->
         <div class="hd-bg"></div>
@@ -320,13 +361,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="signin.html">
                         <img src="resources/images/icons/usericon02.svg" alt="">
                         <p>마이페이지</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="javascript:void(0);">
                         <img src="resources/images/icons/cart02.svg" alt="">
                         <p>장바구니</p>
                     </a>

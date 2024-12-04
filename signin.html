@@ -15,12 +15,15 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="resources/styles/normalize.css">
-    <link rel="stylesheet" href="resources/styles/product_list.css">
+    <link rel="stylesheet" href="resources/styles/signinpage.css">
     <link rel="stylesheet" href="resources/styles/reponsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
 
     <!-- web-font [pretendard] -->
@@ -141,61 +144,140 @@
         <!-- main -->
         <main class="main" role="main">
             <div class="main-wrap">
-                <section class="section section-width__wide productpage-naviarea display-flex">
-                    <h2 class="title">MAN</h2>
-                    <ul class="productpage-category__list display-flex">
-                        <li><button class="active">ALL</button></li>
-                        <li><button>OUTER</button></li>
-                        <li><button>TOP</button></li>
-                        <li><button>PANTS</button></li>
-                        <li><button>KNIT</button></li>
-                        <li><button>BAG</button></li>
-                        <li><button>ACC</button></li>
-                    </ul>
-                </section>
+                <section class="section section-width__limit sign-in">
+                    <div class="signin-inner display-flex">
+                        <form action="" class="signinbox">
+                            <div class="signinbox-btn__wrap display-flex">
+                                <button class="signinbox-btn signin-btn">로그인</button>
+                                <button class="signinbox-btn signup-btn">회원가입</button>
+                            </div>
+                            <div class="signin-input__wrap">
+                                <div class="signin-inputbox sign-inarea">
+                                    <div class="signin-social__wrap">
+                                        <button class="signin-social signin-social__kakao">
+                                            <img src="resources/images/icons/sns_kakao.svg" alt="">카카오계정 로그인
+                                        </button>
+                                        <button class="signin-social signin-social__naver">
+                                            <img src="resources/images/icons/sns_naver.svg" alt="">네이버계정 로그인
+                                        </button>
+                                    </div>
+                                    <span class="signin-hr"></span>
+                                    <div class="signin-content__wrap">
+                                        <div class="signin-userinfo display-flex">
+                                            <div class="display-flex">
+                                                <label for="signIn-userId">아이디</label>
+                                                <input type="text" name="signin-input-id" id="signIn-userId"
+                                                    placeholder="아이디를 입력해주세요.">
+                                            </div>
+                                            <div class="display-flex">
+                                                <label for="signIn-userPw">비밀번호</label>
+                                                <input type="password" name="signin-input-pw" id="signIn-userPw"
+                                                    placeholder="비밀번호를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                        <div class="signin-userfind display-flex">
+                                            <a href="javascript:void(0);">아이디/패스워드 찾기</a>
+                                            <div class="signin-remember__wrap display-flex">
+                                                <label for="autoSignIn">자동로그인</label>
+                                                <input type="checkbox" name="userinfo-remember" id="autoSignIn">
+                                            </div>
+                                        </div>
+                                        <button class="signin-button">로그인</button>
+                                    </div>
+                                </div>
 
-                <section class="section section-width__wide productpage-banner__visual swiper">
-                    <ul class="productpage-banner__list swiper-wrapper">
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_balenciaga.png" alt="">
-                        </li>
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_bottega.png" alt="">
-                        </li>
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_chanel.png" alt="">
-                        </li>
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_gucci.png" alt="">
-                        </li>
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_miumiu.png" alt="">
-                        </li>
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_saint.png" alt="">
-                        </li>
-                        <li class="productpage-banner__item swiper-slide">
-                            <img src="resources/images/product_page_woman/pw_banner_vuitton.png" alt="">
-                        </li>
-                    </ul>
-                    <div class="swiper-button-prev prev-no-bg"></div>
-                    <div class="swiper-button-next next-no-bg"></div>
-                </section>
-                <section class="section section-width__limit productpage-timedeal">
-                    <h2 class="title">Time Deal</h2>
-                    <p class="subtitle">놓치면 후회하는 12시간 한정특가 아이템</p>
-                    <div class="timedeal-wrap swiper">
-                        <ul class="product-list product-list__discount swiper-wrapper" id="discountProductList">
-
-                        </ul>
-                    </div>
-                </section>
-                <section class="section section-width__limit productpage-itemlist">
-                    <div class="itemlist-wrap">
-                        <div class="product-list__box">
-                            <ul class="product-list" id="productList">
-                                <!-- item -->
-                            </ul>
+                                <div class="signin-inputbox sign-uparea" id="signupPage">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th><label for="signUp-userId">아이디</label></th>
+                                                <td class="display-flex">
+                                                    <input type="text" name="signup-input-id" id="signUp-userId">
+                                                    <button class="id-duplicate-check">중복확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="signUp-userPw">비밀번호</label></th>
+                                                <td>
+                                                    <input type="password" name="signup-input-pw" id="signUp-userPw">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="signUp-userPwCheck">비밀번호 확인</label></th>
+                                                <td>
+                                                    <input type="password" name="signup-input-pwcheck"
+                                                        id="signUp-userPwCheck">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="signUp-userName">이름</label></th>
+                                                <td>
+                                                    <input type="text" name="signup-input-name" id="signUp-userName">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="signUp-userEmail">이메일</label></th>
+                                                <td>
+                                                    <input type="text" name="signup-input-email" id="signUp-userEmail">
+                                                    <span>@</span>
+                                                    <select name="signup-input-email-domain"
+                                                        id="signUp-userEmail-domain">
+                                                        <option value="none" selected>선택</option>
+                                                        <option value="domain-gmail">gmail.com</option>
+                                                        <option value="domain-naver">naver.com</option>
+                                                        <option value="domain-daum">daum.net</option>
+                                                        <option value="domain-nate">nate.com</option>
+                                                        <option value="domain-direct">직접입력</option>
+                                                    </select>
+                                                    <input type="text" id="domainDirect" name="domainDirect">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><label for="signUp-userTel-first">휴대전화</label></th>
+                                                <td class="signup-tel-inputwrap">
+                                                    <input type="tel" name="signUp-input-tel" id="signUp-userTel-first">
+                                                    <span>-</span>
+                                                    <input type="tel" name="signUp-input-tel"
+                                                        id="signUp-userTel-middle">
+                                                    <span>-</span>
+                                                    <input type="tel" name="signUp-input-tel" id="signUp-userTel-last">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><button class="user-tel-check">인증번호 받기</button></th>
+                                                <td>
+                                                    <input type="text" name="signup-input-checknum" id="signUp-checkNum"
+                                                        placeholder="인증번호를 입력하세요.">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="signup-checklist__wrap">
+                                        <div class="display-flex">
+                                            <input type="checkbox" name="signup-check01" id="signup-check01"><label
+                                                for="signup-check01">만 14세
+                                                이상입니다.</label>
+                                        </div>
+                                        <div class="display-flex">
+                                            <input type="checkbox" name="signup-check02" id="signup-check02"><label
+                                                for="signup-check02">이용약관 동의</label><a href="">보기</a>
+                                        </div>
+                                        <div class="display-flex">
+                                            <input type="checkbox" name="signup-check03" id="signup-check03"><label
+                                                for="signup-check03">개인정보수집 및 이용
+                                                동의</label>
+                                        </div>
+                                    </div>
+                                    <button class="signup-button">회원가입</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="signinpage-banner display-flex">
+                            <div class="signinpage-banner__content signinpage-banner__big">
+                                <p>프리미엄 브랜드 셀렉샵 <span>REVE</span></p>
+                                <!-- <img src="resources/images/logo_light.svg" alt="" class="banner-logo"> -->
+                            </div>
+                            <div class="signinpage-banner__content signinpage-banner__small"></div>
                         </div>
                     </div>
                 </section>
@@ -337,7 +419,6 @@
         </footer>
         <!-- /footer -->
 
-
         <div class="navbar-only__mobile">
             <ul class="display-flex">
                 <li>
@@ -373,13 +454,64 @@
             </ul>
         </div>
 
+
         <button class="topbutton"><img src="resources/images/icons/totop.svg" alt=""></button>
+
     </div>
 
     <script src="resources/js/common.js"></script>
-    <script src="resources/js/product.js"></script>
-    <script src="resources/js/product_page.js"></script>
     <script src="resources/js/swipers.js"></script>
+
+    <script>
+        $(function () {
+            $("#domainDirect").hide();
+
+            $("#signUp-userEmail-domain").change(function () {
+                if ($("#signUp-userEmail-domain").val() == "domain-direct") {
+                    $("#domainDirect").show();
+                } else {
+                    $("#domainDirect").hide();
+                }
+            })
+        });
+
+        const signinBtn = document.querySelector('.signin-btn');
+        const signupBtn = document.querySelector('.signup-btn');
+        const signinArea = document.querySelector('.sign-inarea');
+        const signupArea = document.querySelector('.sign-uparea');
+
+        // 초기 상태 설정
+        signinBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // 기본 동작 방지
+            // sign-inarea 보이기
+            signinArea.style.display = 'block';
+            signupArea.style.display = 'none';
+
+            // 버튼 스타일 변경
+            // signinBtn.style.borderBottom = '3px solid var(--black90)';
+            // signupBtn.style.borderBottom = '3px solid var(--black20)';
+            signupBtn.style.backgroundColor = 'var(--light-gray)';
+            signupBtn.style.fontWeight = 'var(--font-weight-regular)';
+            signinBtn.style.backgroundColor = 'var(--white)';
+            signinBtn.style.fontWeight = 'var(--font-weight-bold)';
+
+        });
+
+        signupBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // 기본 동작 방지
+            // sign-uparea 보이기
+            signinArea.style.display = 'none';
+            signupArea.style.display = 'block';
+
+            // 버튼 스타일 변경
+            // signupBtn.style.borderBottom = '3px solid var(--black90)';
+            // signinBtn.style.borderBottom = '3px solid var(--black20)';
+            signinBtn.style.backgroundColor = 'var(--light-gray)';
+            signinBtn.style.fontWeight = 'var(--font-weight-regular)';
+            signupBtn.style.backgroundColor = 'var(--white)';
+            signupBtn.style.fontWeight = 'var(--font-weight-bold)';
+        });
+    </script>
 </body>
 
 </html>

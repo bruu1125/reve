@@ -1,0 +1,428 @@
+@charset "utf-8";
+@import url(root.css);
+@import url(common.css);
+
+.section.sign-in {
+    height: auto;
+}
+
+.signin-inner {
+    width: 100%;
+    /* max-height: 670px; */
+    gap: 2rem;
+}
+
+.signinbox {
+    flex: 1.5;
+    background-color: var(--white);
+    /* border: 1px solid var(--black50); */
+}
+
+.signinbox-btn__wrap > .signinbox-btn {
+    flex: 1;
+    padding: 2rem 0;
+    font-size: var(--font-size-lg);
+    background-color: var(--light-gray);
+    /* border-bottom: 3px solid var(--black20); */
+}
+
+.signinbox-btn.signin-btn {
+    /* border-bottom: 3px solid var(--black90); */
+    background-color: var(--white);
+    font-weight: var(--font-weight-bold);
+}
+
+.signin-input__wrap {
+    overflow-y: auto;
+    max-height: 608px;
+}
+.signin-input__wrap::-webkit-scrollbar {
+    width: 5px;
+}
+.signin-input__wrap::-webkit-scrollbar-thumb {
+    background-color: var(--black50); /* 스크롤바의 색상 */
+}
+.signin-input__wrap::-webkit-scrollbar-track{
+    background-color: var(--black20);
+}
+
+.signin-inputbox {
+    width: 95%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 8rem 0.5rem;
+}
+.signin-inputbox.sign-inarea {
+    display: block;
+}
+
+
+
+.signin-social__wrap > .signin-social {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0; 
+    width: 100%;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    position:relative;
+
+    > img {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+}
+.signin-social.signin-social__kakao {
+    background-color: #FDE500;
+    color: #3C1E1E;
+    margin-bottom: 0.4rem;
+}
+.signin-social.signin-social__naver {
+    background-color: #1DC800;
+    color: var(--white);
+}
+
+.signin-hr {
+    display: block;
+    /* padding: 1rem; */
+    width: 100%;
+    height: 1px;
+    background-color: var(--black50);
+    font-size: var(--font-size-xs);
+    position: relative;
+    text-align: center;
+    margin: 4rem auto;
+    color: var(--txt-color-light);
+}
+
+.signin-hr::after {
+    content: '또는';
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 0 1rem;
+}
+
+.signin-userinfo {
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.signin-userinfo > .display-flex {
+    align-items: center;
+
+    > label {
+        width: 55px;
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-medium);
+        color: var(--txt-color-light);
+        margin-right: 1rem;
+        text-align: justify;
+    }
+
+    > input {
+        flex: 1;
+        padding: 1.4rem;
+        font-size: var(--font-size-sm);
+        border: none;
+        border-bottom: 1px solid var(--black50);
+        outline: none;
+    }
+    > input::placeholder {
+        color: var(--black80)
+    }
+}
+
+.signin-userfind {
+    align-items: center;
+    font-size: var(--font-size-sm);
+    justify-content: space-between;
+    color: var(--txt-color-light);
+    margin: 2rem 0 5rem;
+
+    > a {
+        font-size: var(--font-size-sm);
+        padding: 0.1rem;
+        border-bottom: 1px solid var(--txt-color-light);
+    }
+}
+.signin-remember__wrap {
+    align-items: center;
+}
+.signin-remember__wrap > label {
+    margin-right: 5px;
+}
+.signin-remember__wrap > input[type='checkbox']#autoSignIn {
+    margin: 0;
+}
+
+.signin-content__wrap > .signin-button {
+    width: 100%;
+    padding: 2.4rem 0;
+    font-size: var(--font-size-md);
+    border-radius: 2px;
+    font-weight: var(--font-weight-medium);
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+
+.signin-inputbox.sign-uparea {
+    display: none;
+    font-size: var(--font-size-sm);
+    padding-top: 4rem;
+
+    > table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: separate;
+    border-spacing: 0 2.4rem;
+    }
+    > table th {
+        width: 120px;
+        text-align: left;
+
+        >label {
+            font-weight: var(--font-weight-medium);
+            color: var(--txt-color-light)
+        }
+    }
+    
+    > table td > input {
+        display: inline-block;
+        width:calc(100% - 0.8rem);
+        padding: 1.2rem 0;
+        padding-left: 0.8rem;
+        border:none;
+        border-bottom: 1px solid var(--black50);
+        outline: none;
+    }
+    /* > table td > input:not(.signup-tel-inputwrap>input, input#signUp-userEmail, input#domainDirect) {
+        width: 100%;
+    } */
+     td > span {
+        display: inline-block;
+        width: 15px;
+        text-align: center;
+     }
+    input#signUp-userEmail {
+        padding-left: 0;
+        width: calc(50% - 7.5px);
+    }
+    td.display-flex {
+        justify-content: space-between;
+    }
+    input#signUp-userId {
+        width: calc(100% - 1.6rem - 95px);
+    }
+    > table td > select {
+        width: calc(48% - 7.5px);
+        display: inline-block;
+        padding: 1.1rem 0.6rem;
+        border:none;
+        border-bottom: 1px solid var(--black50);
+        outline: none;
+    }
+    > table td.signup-tel-inputwrap {
+        display: flex;
+        align-items: center;
+
+        > input {
+            width: calc(100% / 3 - 7.5px);
+        }
+    }
+    > table td > input#domainDirect {
+        margin-top: 10px;
+        /* width: calc(50% - 7.5px); */
+        width: 100%;
+    }
+    
+    .id-duplicate-check {
+        display: block;
+        width: 90px;
+        padding: 0 2rem;
+        background-color: var(--light-gray);
+        /* border: 1px solid var(--black20); */
+    }
+    .user-tel-check {
+        display: block;
+        width: 90%;
+        height: 40px;
+        background-color: var(--light-gray);
+        /* border: 1px solid var(--black20); */
+    }
+}
+.signup-checklist__wrap {
+    margin: 1.2rem 0 2.4rem;
+
+    > div.display-flex {
+        padding: 0.5rem;
+    }
+
+    > div.display-flex > input[type='checkbox'] {
+        margin: 0;
+        margin-right: 1.2rem;
+    }
+
+    > div.display-flex > a {
+        display: inline-block;
+        color: var(--txt-color-light);
+        margin-left: 0.4rem;
+        border-bottom: 1px solid var(--txt-color-light);
+    }
+}
+
+.signup-button {
+    width: 100%;
+    padding: 2.4rem 0;
+    font-size: var(--font-size-md);
+    border-radius: 2px;
+    font-weight: var(--font-weight-medium);
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+
+.signinpage-banner {
+    flex: 1;
+    /* max-height: 641px;  */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    /* border: 1px solid var(--black50); */
+}
+
+.signinpage-banner__big {
+    width: 100%;
+    height: 80%;
+    /* aspect-ratio: 1 / 1; */
+    background-color: gray;
+    background: url(../images/main/signinpage_banner.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    > p {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,0);
+        z-index: 1;
+        color: var(--white);
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-light);
+        text-align: center;
+        width: 100%;
+
+        > span {
+            font-weight: var(--font-weight-medium);
+            /* display: block; */
+            margin-left: 2.5%;
+        }
+    }
+    /* > img.banner-logo {
+        position:absolute;
+        width: 35%;
+        max-width: 190px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        opacity: 0.35;
+    } */
+}
+.signinpage-banner__big::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:var(--black50);
+}
+
+.signinpage-banner__small {
+    width: 100%;
+    height: 20%;
+    background-color: var(--black20);
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width:768px) and (max-width:1023px) { 
+    .signin-inner.display-flex {
+        flex-direction: column;
+    }
+    .signinpage-banner {
+        flex:auto;
+        height: 500px;
+        flex-direction: row;
+    }
+    .signinpage-banner__big {
+        width: 60%;
+        height: 100%;
+    }
+    .signinpage-banner__small {
+        width: 40%;
+        height: 100%;
+    }
+}
+
+
+@media all and (max-width:767px) {
+    .signinbox-btn__wrap > .signinbox-btn {
+        font-size: var(--font-size-md);
+    }
+    
+    .signin-input__wrap {
+    max-height: none;
+}
+    .signinpage-banner {
+        display: none;
+    }
+
+    .signin-inputbox.sign-uparea {
+    padding-left: 0;
+    padding-right: 0;
+    > table {
+        width: 98%;
+        margin: 0 auto;
+        border-spacing: 0 2rem;
+    }
+    > table th {
+        max-width: 80px;
+
+        >label {
+            font-size:var(--font-size-xs);
+        }
+    }
+    > table td > input#signUp-userEmail {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+        > table td > select {
+        width: calc(100% - 19px);
+    }
+
+    input#signUp-userId {
+        width: calc(100% - 95px);
+    }
+
+    > table button {
+        font-size: var(--font-size-xs);
+    }
+    > table button.id-duplicate-check {
+        width: 80px;
+        padding: 0;
+    }
+}
+
+}

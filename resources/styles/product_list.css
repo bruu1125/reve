@@ -9,7 +9,7 @@
     margin-bottom: 6rem;
     position: sticky;
     top:80px;
-    z-index: 100;
+    z-index: 90;
     flex-direction: column;
     justify-content: center;
     transition: 0.5s;
@@ -39,14 +39,25 @@
     > button {
         width: 100px;
         padding: 1rem 0;
-        color: var(--black90)
+        color: var(--black90);
     }
     > button.active {
         background-color: var(--dark-gray);
         color: var(--light-gray);
         /* border:1px solid #00000020; */
     }
+
+
+    @media (hover: hover) {
+        
+         button:hover {
+            background-color: var(--dark-gray);
+            color: var(--light-gray);
+        }
 }
+}
+
+
 
 .section.productpage-banner__visual {
     height: 60vh;
@@ -176,9 +187,7 @@ flex: 1;
 }
 }
 @media all and (max-width:767px) {
-    .hd-bg {
-    display: block;
-}
+    
     .section.productpage-naviarea {
     /* border-bottom: 1px solid var(--black20); */
     background-color: var(--light-gray);

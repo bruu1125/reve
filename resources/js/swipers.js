@@ -45,11 +45,10 @@ $(document).ready(function () {
     
     const mainReviewSwiper = new Swiper('.main-bestreview__wrap', {
       freeMode: false,
-      scrollbar : {
-		el : '.swiper-scrollbar',
-		draggable: true,
-	},
-
+    navigation: {   // 버튼 사용자 지정
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+    },
             slidesPerView: 1.4,
             spaceBetween: 10,
             breakpoints: {
@@ -87,6 +86,7 @@ $(document).ready(function () {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
     },
+
                 
   });
 

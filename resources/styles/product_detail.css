@@ -34,6 +34,23 @@
         top:0;
         left:0;
     }
+.media-gallary.swiper {
+
+    & .swiper-pagination {
+        display: flex;
+        bottom:0;
+        left:0;
+        height: 3.5px;
+
+        > .swiper-pagination-bullet {
+            flex:1;
+            border-radius: 0;
+            margin: 0;
+            background-color: var(--black50);
+            transition: 0.2s;
+        }
+    }
+}
 
 
 
@@ -189,10 +206,10 @@
     justify-content: space-between;
 }
 .total-price > .user-optional__title {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
 }
 .total-price > .user-optional__value {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
 }
 
 .product-buy__btnarea {
