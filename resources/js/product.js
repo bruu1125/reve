@@ -15,7 +15,7 @@ function layout(productBox) {
     productBox.forEach(product => {
         let productTemplate = `
         <li>
-            <a href="https://bruu1125.github.io/reve/product_detail.html">
+            <a href="/../product_detail.html">
                 <div class="product-thumbnail">
                     <img src="${product.url}" alt="${product.title}">
                 </div>
@@ -110,7 +110,7 @@ function timedeallayout(discountProductBox) {
         
         let discountProductTemplate = `
         <li class="swiper-slide">
-            <a href="https://bruu1125.github.io/reve/product_detail.html"">
+            <a href="/../product_detail.html"">
                 <div class="product-thumbnail">
                     <img src="${discountProduct.url}" alt="${discountProduct.title}">
                 </div>
