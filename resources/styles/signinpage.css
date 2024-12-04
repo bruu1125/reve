@@ -225,6 +225,7 @@
         border:none;
         border-bottom: 1px solid var(--black50);
         outline: none;
+        background-color: transparent;
     }
     > table td.signup-tel-inputwrap {
         display: flex;
